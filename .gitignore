@@ -1,0 +1,25 @@
+# LaTeX build output
+# Only the compiled main.pdf is ignored: figures/*.pdf and
+# Gualtieri_MS_Thesis.pdf are tracked sources/deliverables.
+/main.pdf
+
+# pdflatex
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.synctex.gz
+*.synctex(busy)
+
+# BibTeX / natbib
+*.bbl
+*.blg
+
+# latexmk
+*.fdb_latexmk
+*.fls
+
+# macOS
+.DS_Store
