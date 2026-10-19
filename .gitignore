@@ -23,3 +23,6 @@
 
 # macOS
 .DS_Store
+
+# GitHub Pages staging directory (assembled by .github/workflows/pages.yml)
+_site/

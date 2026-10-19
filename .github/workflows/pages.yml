@@ -1,0 +1,57 @@
+name: Build thesis and deploy site
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "main.tex"
+      - "references.bib"
+      - "figures/**"
+      - "site/**"
+      - "assets/**"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # latexmk runs pdfLaTeX and BibTeX as often as needed. Setting args replaces the
+      # action's defaults, so they are repeated here with -jobname added.
+      - name: Compile LaTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: main.tex
+          args: -pdf -file-line-error -halt-on-error -interaction=nonstopmode -jobname=Gualtieri_MS_Thesis
+
+      - name: Assemble site
+        run: |
+          mkdir -p _site
+          cp Gualtieri_MS_Thesis.pdf _site/
+          cp -R assets _site/assets
+          sed "s/__BUILD_DATE__/$(date -u +'%-d %b %Y')/" site/index.html > _site/index.html
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

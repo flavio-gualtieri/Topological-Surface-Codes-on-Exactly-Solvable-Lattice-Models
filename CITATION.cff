@@ -1,0 +1,32 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Topological Surface Codes on Exactly Solvable Lattice Models"
+authors:
+  - family-names: Gualtieri
+    given-names: Flavio D.
+    affiliation: "King's College London"
+repository-code: "https://github.com/flavio-gualtieri/Topological-Surface-Codes-on-Exactly-Solvable-Lattice-Models"
+url: "https://flavio-gualtieri.github.io/Topological-Surface-Codes-on-Exactly-Solvable-Lattice-Models/"
+license: CC-BY-4.0
+keywords:
+  - quantum error correction
+  - toric code
+  - color code
+  - topological order
+  - transversal gates
+preferred-citation:
+  type: thesis
+  title: "Topological Surface Codes on Exactly Solvable Lattice Models"
+  authors:
+    - family-names: Gualtieri
+      given-names: Flavio D.
+  thesis-type: "MSc dissertation"
+  institution:
+    name: "King's College London"
+    city: London
+    country: GB
+  department: "Department of Mathematics"
+  year: 2024
+  month: 11
+  repository-code: "https://github.com/flavio-gualtieri/Topological-Surface-Codes-on-Exactly-Solvable-Lattice-Models"
+  url: "https://flavio-gualtieri.github.io/Topological-Surface-Codes-on-Exactly-Solvable-Lattice-Models/"
