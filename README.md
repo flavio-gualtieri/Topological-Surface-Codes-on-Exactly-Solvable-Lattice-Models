@@ -2,9 +2,9 @@
 
 **Flavio D. Gualtieri** · MSc dissertation in Theoretical Physics · Department of Mathematics, King's College London · November 2024
 
-**[Read online](https://flavio-gualtieri.github.io/Topological-Surface-Codes-on-Exactly-Solvable-Lattice-Models/)** · **[Download PDF](Gualtieri_MS_Thesis.pdf)** · [LaTeX source](main.tex)
+**[Read online](https://flavio-gualtieri.github.io/msc-thesis/)** · **[Download PDF](Gualtieri_MS_Thesis.pdf)** · [LaTeX source](main.tex)
 
-<a href="https://flavio-gualtieri.github.io/Topological-Surface-Codes-on-Exactly-Solvable-Lattice-Models/"><img src="assets/title-page.png" align="right" width="200" alt="Title page of the dissertation"></a>
+<a href="https://flavio-gualtieri.github.io/msc-thesis/"><img src="assets/title-page.png" align="right" width="200" alt="Title page of the dissertation"></a>
 
 <!-- DRAFT: author to review -->
 Topological codes protect quantum information from local noise by storing it in global, topological degrees of freedom of a lattice model. This dissertation studies two exactly solvable examples, the toric code and the color code, focusing on constructing logical operators and implementing fault-tolerant transversal gates. It develops the two-dimensional toric code: its stabilizer formalism and Hamiltonian, its four-fold degenerate ground state, its logical operators, and the fusion and braiding of its anyonic excitations, including boundaries and punctures. It then turns to color codes, which a local unitary transformation maps to decoupled copies of the toric code (two in two dimensions, three in three), and constructs transversal Hadamard, phase and C<sup>⊗d−1</sup>Z gates that reach beyond the Clifford group. An appendix introduces the algebraic topology used throughout.
@@ -33,7 +33,7 @@ Topological codes protect quantum information from local noise by storing it in 
 | | References | 50 |
 | 6 | Appendix: An Algebraic Topology Primer | 52 |
 
-The [online version](https://flavio-gualtieri.github.io/Topological-Surface-Codes-on-Exactly-Solvable-Lattice-Models/) lists every subsection with a link to its page in the PDF.
+The [online version](https://flavio-gualtieri.github.io/msc-thesis/) lists every subsection with a link to its page in the PDF.
 
 ## Citation
 
@@ -46,7 +46,7 @@ The [online version](https://flavio-gualtieri.github.io/Topological-Surface-Code
   address = {London, UK},
   year    = {2024},
   month   = nov,
-  url     = {https://github.com/flavio-gualtieri/Topological-Surface-Codes-on-Exactly-Solvable-Lattice-Models}
+  url     = {https://github.com/flavio-gualtieri/msc-thesis}
 }
 ```
 
